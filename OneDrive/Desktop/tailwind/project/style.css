@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    overflow-x:hidden
+}
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.077)),url('./adobe.jpg');
+    height: 90vh;
+    width: 100%;
+}
+.imges{
+    display: none;
+}
+@media (max-width:1003px) {
+    .butt{
+        display: none;
+    }
+    .imges{
+        display: block;
+        margin-right: 1rem;
+
+    }
+}
+.btn1{
+    background-color:rgba(0, 255, 255, 0.348);
+}
+.info{
+    height: 35%;
+    margin-top: 17%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.448) , rgba(0, 0, 0, 0.481));
+    border-radius:20px;
+}
+@media (max-width:1309px) {
+    .info h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width:709px) {
+    .info{
+        width:80%;
+        text-align: center;
+    }
+}
+.maine{
+    height: 50vh;
+}
+@media (max-width:827px) {
+    .maine{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid rgba(109, 104, 104, 0.242);
+        width: 90%;
+        height: 70vh;
+        margin: 5%;
+    }
+    .roes{
+        flex-direction: column-reverse !important;
+    }
+    hr{
+        display: none;
+    }
+    .techw{
+        width: 90%;
+    }
+}
+input[type="text"]{
+    background-color: rgba(0, 255, 255, 0.303);
+}
+input[type="text"]::placeholder{
+    text-align: center;
+    font-size: 20px;
+}
+@media (max-width:530px) {
+    .subd{
+        font-size:1.4rem;
+        text-align: center;
+    }
+}
+@media (max-width:883px) {
+    .footer{
+        flex-direction: column;
+        height: 30rem;
+        align-items: flex-start;
+    }
+}
